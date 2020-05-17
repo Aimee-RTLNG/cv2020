@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="ressources/logo/favicon.ico" />
+    <title>CV Interactif Aimee RITLENG</title>
+</head>
+
+<body class="h-100">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- HOME BUTTON -->
+            <a class="navbar-brand-action d-none d-lg-block"><img src="ressources/logo/favicon.ico" alt="Accueil"></a>
+            <a class="navbar-brand d-block d-lg-none"><img src="ressources/logo/favicon.ico" alt="Accueil"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- MENUS DE NAVIGATIONS -->
+            <div class="collapse navbar-collapse" id="navbarText">
+                <!-- PAGES -->
+                <ul class="navbar-nav mr-auto smooth-scroll">
+                    <li class="nav-item active" data-target="#content-carousel" data-interval="false" data-slide-to="0">
+                        <a class="nav-link text-center" href="#presentation">Présentation</a>
+                        <div class="underline-selected"></div>
+                    </li>
+                    <li class="nav-item" data-target="#content-carousel" data-slide-to="1">
+                        <a class="nav-link text-center" href="#studies">Parcours</a>
+                        <div class="underline-selected"></div>
+                    </li>
+                    <li class="nav-item" data-target="#content-carousel" data-slide-to="2">
+                        <a class="nav-link text-center" href="#skills">Compétences</a>
+                        <div class="underline-selected"></div>
+                    </li>
+                    <li class="nav-item" data-target="#content-carousel" data-slide-to="3">
+                        <a class="nav-link text-center" href="#work">Réalisations</a>
+                        <div class="underline-selected"></div>
+                    </li>
+                    <li class="nav-item" data-target="#content-carousel" data-slide-to="4">
+                        <a class="nav-link text-center" href="#contact">Contact</a>
+                        <div class="underline-selected"></div>
+                    </li>
+                </ul>
+                <!-- RESEAUX -->
+                <div class="navbar-nav ml-auto smooth-scroll social-navbar mt-2 d-block text-center">
+                    <a class="nav-item text-dark" href="ressources/CV_Aimee_RITLENG.pdf" target="_blank" style="text-decoration: none;"
+                        data-toggle="tooltip" title="CV en format PDF">
+                        <i class="fas fa-file-download"></i>
+                    </a>
+                    <a class="nav-item text-dark" href="https://www.linkedin.com/in/aimee-ritleng-strasbourg/" style="text-decoration: none;"
+                        target="_blank" data-toggle="tooltip" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="nav-item text-dark" href="https://github.com/Aimee-RTLNG" target="_blank" style="text-decoration: none;"
+                        data-toggle="tooltip" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="nav-item text-dark" href="https://www.behance.net/aimeeritleng" target="_blank" style="text-decoration: none;"
+                        data-toggle="tooltip" title="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- CAROUSEL -->
+    <div class="container-fluid carousel slide p-0" id="content-carousel" data-interval="false">
+        <!-- SLIDER DE PAGES -->
+        <ol class="carousel-indicators d-none d-md-flex">
+            <li id="toggle-slide-presentation" data-target="#content-carousel" data-slide-to="0" data-toggle="tooltip"
+                class="active" title="Présentation"></li>
+            <li id="toggle-slide-parcours" data-target="#content-carousel" data-slide-to="1" data-toggle="tooltip"
+                title="Parcours"></li>
+            <li id="toggle-slide-competences" data-target="#content-carousel" data-slide-to="2" data-toggle="tooltip"
+                title="Compétences"></li>
+            <li id="toggle-slide-work" data-target="#content-carousel" data-slide-to="3" data-toggle="tooltip"
+                title="Réalisations"></li>
+            <li id="toggle-slide-contact" data-target="#content-carousel" data-slide-to="4" data-toggle="tooltip"
+                title="Contact"></li>
+            <div id="drag-slide" class="d-flex align-items-center text-white">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </ol>
+        <!-- CONTENU -->
+        <div class="carousel-inner">
+            <!-- PRESENTATION -->
+            <div class="carousel-item part bg-light active" id="presentation" data-slideid="1">
+                <div class="h-100 slide-container slide-presentation pb-0 pb-md-3" style="overflow: hidden;">
+                    <div class="row h-100 w-100 slide-content mx-auto">
+                        <!-- Première Slide -->
+                        <div class="col-6 m-auto col-sm-4 h-lg-100 slide-content logo-container">
+                            <img src="ressources/logo/logo_mask_wh.svg" class="logo" draggable="false">
+                            <img src="ressources/img/ambiant/giphy2.gif" class="logo-background" draggable="false">
+                        </div>
+                        <div class="col-sm-8 h-lg-100 d-flex flex-column slide-content justify-content-center"
+                            style="overflow: hidden">
+                            <h1 class="text-center text-md-left"><span data-toggle="tooltip" title="Bonjour 👋 !"
+                                    data-placement="right">Aimee RITLENG</span></h1>
+                            <h2 class="text-center text-md-left">Développement web</h2>
+                            <div class="row summary mt-4 mx-3">
+                                <div class="col-12 col-md pr-3">
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.5 7.9s-5.8-2.9-6.9-3.5-1.7-.7-3 0c-1.3.6-6.7 3.3-6.7 3.3-.8.4-1.5 1.2-1.5 2s.2 1.2.2 1.2-.1.3-.3 1.5c-.3 1.2-.3 2.7-.3 3.3 0 1.5 1.3 2.6 2.2 2.7.9.1 1.6-.1 1.6-.1 1.4 1.3 3.7 2.1 6.4 2.1 4.4 0 7.8-2.2 7.8-5 0-1.1-.4-2.7-.4-2.7l1.1-.6c.9-.5 1.3-1.4 1.3-2.3-.1-.8-.6-1.5-1.5-1.9zm-8.2 10.4c-3.2 0-5.8-1.3-5.8-3l.5-2.8 4.2 2.1c.6.3 1.5.3 2.2 0l4.3-2.1.4 2.8c0 1.6-2.5 3-5.8 3zm7.3-8.1l-6.6 3.4c-.4.2-1 .2-1.4 0l-5.7-2.9c-.2.5-.3 1.2-.3 2 0 1.4.2 2.4.2 2.9s-.3.8-.7.8h-.1c-.4 0-.8-.3-.8-.8s0-1.6.3-3.1c.2-.9.4-1.7.6-2.2l-.2-.1c-.4-.2-.4-.5 0-.7l6.7-3.4c.4-.2.9-.2 1.3 0s6.7 3.4 6.7 3.4c.4.2.4.5 0 .7z">
+                                                </path>
+                                            </svg>
+                                            <b>ACTUELLEMENT</b>
+                                        </span>
+                                        Etudiante en licence professionnelle DWEB à l'IUT de Haguenau
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke-linecap="round" stroke-linejoin="round" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                            </svg>
+                                            <b>TRAVAIL</b>
+                                        </span>
+                                        En alternance à SEW USOCOME (Haguenau)
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19 8h-2.352c.219-.457.352-.961.352-1.5 0-1.93-1.57-3.5-3.5-3.5-.979 0-1.864.407-2.5 1.058-.636-.651-1.521-1.058-2.5-1.058-1.93 0-3.5 1.57-3.5 3.5 0 .539.133 1.043.352 1.5h-2.352c-.553 0-1 .448-1 1v4c0 .552.447 1 1 1v5c0 1.654 1.346 3 3 3h10c1.654 0 3-1.346 3-3v-5c.553 0 1-.448 1-1v-4c0-.552-.447-1-1-1zm-1 4h-5v-2h5v2zm-8-5h2v1h-2v-1zm2 3v2h-2v-2h2zm1.5-5c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5c-.177 0-.344-.039-.5-.097v-.903c0-.521-.404-.937-.913-.982.202-.59.756-1.018 1.413-1.018zm-6.5 1.5c0-.827.673-1.5 1.5-1.5.657 0 1.211.428 1.413 1.018-.509.045-.913.461-.913.982v.903c-.156.058-.323.097-.5.097-.827 0-1.5-.673-1.5-1.5zm2 3.5v2h-5v-2h5zm-3 10c-.551 0-1-.449-1-1v-6h4v7h-3zm4 0v-7h2v7h-2zm6 0h-3v-7h4v6c0 .551-.449 1-1 1z">
+                                                </path>
+                                            </svg>
+                                            <b>ÂGE</b>
+                                        </span>
+                                        <span data-toggle="tooltip" title="05 octobre">Née en 1998, 21 ans</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 5c1.609 0 3.12.614 4.254 1.73 1.126 1.107 1.746 2.579 1.746 4.14s-.62 3.03-1.745 4.139l-4.255 4.184-4.254-4.186c-1.125-1.107-1.745-2.576-1.745-4.139s.62-3.032 1.745-4.141c1.135-1.113 2.647-1.727 4.254-1.727m0-2c-2.047 0-4.096.768-5.657 2.305-3.124 3.074-3.124 8.057 0 11.131l5.657 5.563 5.657-5.565c3.124-3.072 3.124-8.056 0-11.129-1.561-1.537-3.609-2.305-5.657-2.305zM12 8.499c.668 0 1.296.26 1.768.731.976.976.976 2.562 0 3.537-.473.472-1.1.731-1.768.731s-1.295-.26-1.768-.731c-.976-.976-.976-2.562 0-3.537.473-.471 1.101-.731 1.768-.731m0-1c-.896 0-1.792.342-2.475 1.024-1.367 1.367-1.367 3.584 0 4.951.684.684 1.578 1.024 2.475 1.024s1.792-.342 2.475-1.024c1.366-1.367 1.366-3.584 0-4.951-.683-.683-1.579-1.024-2.475-1.024z">
+                                                </path>
+                                            </svg>
+                                            <b>LOCATION </b>
+                                        </span>
+                                        Basée sur <span data-toggle="tooltip"
+                                            title="Prête à partir à l'aventure">Strasbourg</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-md pr-3">
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.855 20.966c-.224 0-.443-.05-.646-.146l-.104-.051-4.107-2.343-4.107 2.344-.106.053c-.488.228-1.085.174-1.521-.143-.469-.34-.701-.933-.586-1.509l.957-4.642-1.602-1.457-1.895-1.725-.078-.082c-.375-.396-.509-.97-.34-1.492.173-.524.62-.912 1.16-1.009l.102-.018 4.701-.521 1.946-4.31.06-.11c.262-.473.764-.771 1.309-.771.543 0 1.044.298 1.309.77l.06.112 1.948 4.312 4.701.521.104.017c.539.1.986.486 1.158 1.012.17.521.035 1.098-.34 1.494l-.078.078-3.498 3.184.957 4.632c.113.587-.118 1.178-.59 1.519-.252.182-.556.281-.874.281zm-8.149-6.564c-.039.182-.466 2.246-.845 4.082l3.643-2.077c.307-.175.684-.175.99 0l3.643 2.075-.849-4.104c-.071-.346.045-.705.308-.942l3.1-2.822-4.168-.461c-.351-.039-.654-.26-.801-.584l-1.728-3.821-1.726 3.821c-.146.322-.45.543-.801.584l-4.168.461 3.1 2.822c.272.246.384.617.302.966z">
+                                                </path>
+                                            </svg>
+                                            <b>OBJECTIF </b>
+                                        </span>
+                                        Effectuer un Mastère en développement web dès 2020
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13 5l.855 3.42 3.389-.971 1.501 2.6-2.535 2.449 2.535 2.451-1.5 2.6-3.39-.971-.855 3.422h-3l-.855-3.422-3.39.971-1.501-2.6 2.535-2.451-2.534-2.449 1.5-2.6 3.39.971.855-3.42h3m0-2h-3c-.918 0-1.718.625-1.939 1.516l-.354 1.412-1.4-.4c-.184-.053-.369-.078-.552-.078-.7 0-1.368.37-1.731 1l-1.5 2.6c-.459.796-.317 1.802.342 2.438l1.047 1.011-1.048 1.015c-.66.637-.802 1.643-.343 2.438l1.502 2.6c.363.631 1.031 1 1.731 1 .183 0 .368-.025.552-.076l1.399-.401.354 1.415c.222.885 1.022 1.51 1.94 1.51h3c.918 0 1.718-.625 1.939-1.516l.354-1.414 1.399.4c.184.053.369.077.552.077.7 0 1.368-.37 1.731-1l1.5-2.6c.459-.796.317-1.8-.342-2.438l-1.047-1.013 1.047-1.013c.66-.637.801-1.644.342-2.438l-1.5-2.6c-.365-.631-1.031-1-1.732-1-.184 0-.368.025-.551.076l-1.4.401-.354-1.413c-.22-.884-1.02-1.509-1.938-1.509zM11.5 10.5c1.104 0 2 .895 2 2 0 1.104-.896 2-2 2s-2-.896-2-2c0-1.105.896-2 2-2m0-1c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z">
+                                                </path>
+                                            </svg>
+                                            <b>SPECIALITE </b>
+                                        </span>
+                                        <span data-toggle="tooltip" title="PHP = amour de ma vie">
+                                            Développement Back-end
+                                        </span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 20c-.195 0-.391-.057-.561-.172-.225-.151-5.508-3.73-7.146-5.371-1.831-1.831-2.043-3.777-2.043-5.082 0-2.964 2.411-5.375 5.375-5.375 1.802 0 3.398.891 4.375 2.256.977-1.365 2.573-2.256 4.375-2.256 2.964 0 5.375 2.411 5.375 5.375 0 1.305-.212 3.251-2.043 5.082-1.641 1.641-6.923 5.22-7.146 5.371-.17.115-.366.172-.561.172zm-4.375-14c-1.861 0-3.375 1.514-3.375 3.375 0 1.093.173 2.384 1.457 3.668 1.212 1.212 4.883 3.775 6.293 4.746 1.41-.971 5.081-3.534 6.293-4.746 1.284-1.284 1.457-2.575 1.457-3.668 0-1.861-1.514-3.375-3.375-3.375s-3.375 1.514-3.375 3.375c0 .552-.447 1-1 1s-1-.448-1-1c0-1.861-1.514-3.375-3.375-3.375z">
+                                                </path>
+                                            </svg>
+                                            <b>PASSIONS</b>
+                                        </span>
+                                        <span data-toggle="tooltip" title="Electro & French Touch">Musique
+                                            éléctronique</span>,
+                                        <span data-toggle="tooltip"
+                                            title="Fan absolue d'Etienne Robial">graphisme</span>,
+                                        <span data-toggle="tooltip" title="Il y en a une cachée">giraffes</span>
+                                        et
+                                        <span data-toggle="tooltip" title="Un mot : surprenant.">
+                                            développement
+                                            web</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5em"
+                                                width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.57 8.676c-.391-.144-2.512-.406-3.883-.56.215-1.255.313-2.405.313-3.616 0-1.379-1.122-2.5-2.5-2.5s-2.5 1.121-2.5 2.5c0 1.875-.666 2.738-1.616 3.699-.548-.722-1.407-1.199-2.384-1.199-1.654 0-3 1.346-3 3v6c0 1.654 1.346 3 3 3 .755 0 1.438-.29 1.965-.752l.188.193c.96.736 3.667 1.559 5.848 1.559 1.879 0 2.608-.293 3.253-.553l.316-.123c.834-.305 1.576-1.227 1.736-2.2l.666-5.974c.173-1.037-.443-2.125-1.402-2.474zm-12.57 8.324c-.551 0-1-.448-1-1v-6c0-.552.449-1 1-1s1 .448 1 1v6c0 .552-.449 1-1 1zm11.327-.15c-.037.224-.292.541-.443.596l-.376.146c-.545.219-1.016.408-2.508.408-1.914 0-4.118-.753-4.632-1.146-.158-.12-.368-.564-.368-.854v-4.98c.003-.047.051-.656.707-1.312.913-.914 2.293-2.294 2.293-5.208 0-.275.225-.5.5-.5s.5.225.5.5c0 1.407-.146 2.73-.479 4.293l-.297 1.396 1.321-.188c.603.05 3.933.447 4.334.55.058.03.132.183.111.323l-.663 5.976z">
+                                                </path>
+                                            </svg>
+                                            <b>QUALITÉS </b>
+                                        </span>
+                                        <span data-toggle="tooltip" title="Calme olympique">Patience</span> et
+                                        <span data-toggle="tooltip" title="Sans être bornée">détermination</span>
+                                    </div>
+                                    <div class="text-white">
+                                        <span class="d-block">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1em"
+                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.57 8.676c-.391-.144-2.512-.406-3.883-.56.215-1.255.313-2.405.313-3.616 0-1.379-1.122-2.5-2.5-2.5s-2.5 1.121-2.5 2.5c0 1.875-.666 2.738-1.616 3.699-.548-.722-1.407-1.199-2.384-1.199-1.654 0-3 1.346-3 3v6c0 1.654 1.346 3 3 3 .755 0 1.438-.29 1.965-.752l.188.193c.96.736 3.667 1.559 5.848 1.559 1.879 0 2.608-.293 3.253-.553l.316-.123c.834-.305 1.576-1.227 1.736-2.2l.666-5.974c.173-1.037-.443-2.125-1.402-2.474zm-12.57 8.324c-.551 0-1-.448-1-1v-6c0-.552.449-1 1-1s1 .448 1 1v6c0 .552-.449 1-1 1zm11.327-.15c-.037.224-.292.541-.443.596l-.376.146c-.545.219-1.016.408-2.508.408-1.914 0-4.118-.753-4.632-1.146-.158-.12-.368-.564-.368-.854v-4.98c.003-.047.051-.656.707-1.312.913-.914 2.293-2.294 2.293-5.208 0-.275.225-.5.5-.5s.5.225.5.5c0 1.407-.146 2.73-.479 4.293l-.297 1.396 1.321-.188c.603.05 3.933.447 4.334.55.058.03.132.183.111.323l-.663 5.976z">
+                                                </path>
+                                            </svg>
+                                            <b>DÉFAUTS </b>
+                                        </span>
+                                        <span>Maladresse</span>,
+                                        <span>solitaire</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PARCOURS -->
+            <div class="carousel-item part bg-light" id="studies" data-slideid="2">
+                <div class="row h-100 slide-container">
+                    <div class="col-12 col-lg-1 m-0 p-0 slide-col-title text-left justify-content-end">
+                        <h2 class="m-0 p-0">Parcours</h2>
+                    </div>
+                    <div
+                        class="col-12 col-lg slide-content col-left pl-5 d-flex flex-column justify-content-between pb-5">
+                        <div class='row d-none d-lg-flex flex-column p-0 m-0'>
+                            <h2 class="title-part">Études générales</h2>
+                            <span class="title-separation"></span>
+                        </div>
+                        <!-- BAC -->
+                        <div class='row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0'>
+                            <h3>BAC Scientifique<br>Sciences de l'Ingénieur</h3>
+                            <div class="specific-info specific-place">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/marker.svg" />
+                                </div>
+                                <i>Lycée Marc Bloch</i>
+                            </div>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2"
+                                        baseProfile="tiny" viewBox="0 0 24 24" height="1.4em" width="1.4em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 6.184v-.184c0-1.657-1.343-3-3-3s-3 1.343-3 3h-2c0-1.657-1.343-3-3-3s-3 1.343-3 3v.184c-1.161.415-2 1.514-2 2.816v9c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-9c0-1.302-.839-2.401-2-2.816zm-4-.184c0-.552.447-1 1-1s1 .448 1 1v2c0 .552-.447 1-1 1s-1-.448-1-1v-2zm-8 0c0-.552.447-1 1-1s1 .448 1 1v2c0 .552-.447 1-1 1s-1-.448-1-1v-2zm12 12c0 .551-.448 1-1 1h-12c-.552 0-1-.449-1-1v-6h14v6zm0-7h-14v-2c0-.551.448-1 1-1 0 1.104.896 2 2 2s2-.896 2-2h4c0 1.104.896 2 2 2s2-.896 2-2c.552 0 1 .449 1 1v2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <i>Obtenu en 2016</i>
+                            </div>
+                            <div class="specific-info specific-option">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/star.svg" />
+                                </div>
+                                <i>Spécialité Informatique et Sciences du Numérique</i>
+                            </div>
+                            <div class="specific-info specific-project">
+                                <a class="link-project d-flex" href="https://github.com/Aimee-RTLNG/deamos">
+                                    <div class="icon-diploma">
+                                        <img src="ressources/icons/react/eye.svg" />
+                                    </div>
+                                    <i>Voir le projet informatique</i>
+                                </a>
+                            </div>
+                            <p class="mb-0 mt-2 description-diploma">
+                                > Programmation en Python pour un projet de jeu vidéo
+                            </p>
+
+                        </div>
+                        <!-- C2i -->
+                        <div class='row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0'>
+                            <h3>Certificat informatique et Internet (C2i)</h3>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/calendar.svg" />
+                                </div>
+                                <i>Obtenu en 2017</i>
+                            </div>
+                        </div>
+                        <!-- BAFA -->
+                        <div class='row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0'>
+                            <h3>Diplôme en petits monstres (BAFA)</h3>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/calendar.svg" />
+                                </div>
+                                <i>Obtenu en 2018</i>
+                            </div>
+                        </div>
+                        <!-- TOEIC -->
+                        <div class='row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0'>
+                            <h3>TOEIC : Test of English for International Communication</h3>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/calendar.svg" />
+                                </div>
+                                <i>Passé en 2019</i>
+                            </div>
+                            <div class="specific-info specific-option">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/star.svg" />
+                                </div>
+                                <i>Résultat de 965 points sur 990 : niveau C1</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm slide-content col-right d-flex flex-column justify-content-between pb-5 pl-lg-0 pl-5">
+                        <div class="row d-none d-lg-flex flex-column p-0 m-0">
+                            <h2 class="title-part">Développement web</h2>
+                            <span class="title-separation"></span>
+                        </div>
+                        <!-- DUT MMI -->
+                        <div class="row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0">
+                            <h3>DUT MMI : Métiers du Multimédia et de l’Internet</h3>
+                            <div class="specific-info specific-place">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/marker.svg" />
+                                </div>
+                                <i>IUT de Haguenau</i>
+                            </div>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/calendar.svg" />
+                                </div>
+                                <i>Obtenu en 2019</i>
+                            </div>
+                            <div class="specific-info specific-option">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/star.svg" />
+                                </div>
+                                <i>Major de promotion</i>
+                            </div>
+                            <!-- <div class="specific-info specific-project">
+                                <a class="link-project d-flex" href="#work">
+                                    <div class="icon-diploma">
+                                        <img src="ressources/icons/react/eye.svg" />
+                                    </div>
+                                    <i>Voir les projets de DUT</i>
+                                </a>
+                            </div> -->
+                            <p class="mb-0 mt-2 description-diploma">Développement web front-end HTML & CSS, JavaScript,
+                                PHP, SQL, gestion de
+                                base de données, CMS dont Wordpress<br>
+                                Maitrise des logiciels de PAO : Adobe Photoshop, Illustrator et InDesign<br>
+                                Stage de trois mois à SEW USOCOME en développement web
+                            </p>
+                        </div>
+                        <!-- LICENCE DWEB -->
+                        <div class="row row-diploma d-flex flex-column p-0 mr-2 mr-lg-0">
+                            <h3>Licence professionnelle DWEB : Métiers de l'informatique en Développement Web et
+                                conception d'interfaces</h3>
+                            <div class="specific-info specific-place">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/marker.svg" />
+                                </div>
+                                <i>IUT de Haguenau</i>
+                            </div>
+                            <div class="specific-info specific-date">
+                                <div class="icon-diploma">
+                                    <img src="ressources/icons/react/calendar.svg" />
+                                </div>
+                                <i>De 2019 à 2020 (en cours)</i>
+                            </div>
+                            <!-- <div class="specific-info specific-project">
+                                <a class="link-project d-flex" href="#work">
+                                    <div class="icon-diploma">
+                                        <img src="ressources/icons/react/eye.svg" />
+                                    </div>
+                                    <i>Voir les projets de Licence</i>
+                                </a>
+                            </div> -->
+                            <p class="mb-0 mt-2 description-diploma">
+                                Framework PHP Laravel, e-shop Prestashop, NodeJS, Accessibilitée WEB et visualisation de données
+                                >
+                                En alternance à SEW USOCOME (Haguenau) : réalisation de carte interactive et de pages de
+                                présentation
+                                individuelles de Drive Service Partner
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COMPETENCES -->
+            <div class="carousel-item part bg-light" id="skills" data-slideid="3">
+                <div class="row h-100 slide-container">
+                    <div class="col-12 col-lg-1 m-0 p-0 slide-col-title text-left justify-content-end">
+                        <h2 class="m-0 p-0">Compétences</h2>
+                    </div>
+                    <div class="col-12 col-sm slide-content col-left">
+                        <div class="row d-none d-lg-flex flex-column p-0 m-0">
+                            <h2 class="title-part">Développement web</h2>
+                            <span class="title-separation"></span>
+                        </div>
+                        <div class="row h-lg-75 code-skills mt-lg-5">
+                            <div class="col h-100 d-flex flex-column flex-grow-1">
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-cssjs.svg"
+                                            alt="CSS & JS">
+                                    </div>
+                                    <p>Développement Front</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-phpsql.svg"
+                                            alt="PHP & SQL">
+                                        <!-- <div class="fav">
+                                            <div class="icon-fav">
+                                                <img src="ressources/icons/react/star-full.svg" />
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <p>Développement Back</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-laravel.svg"
+                                            alt="Laravel">
+                                        <!-- <div class="fav">
+                                            <div class="icon-fav">
+                                                <img src="ressources/icons/react/star-full.svg" />
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <p>Framework Laravel</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-sass.svg"
+                                            alt="SCSS & Sass">
+                                    </div>
+                                    <p>SCSS / Sass</p>
+                                </div>
+                            </div>
+                            <div class="col h-100 d-flex flex-column flex-grow-1">
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-jquery.svg"
+                                            alt="jQuery">
+                                        <!-- <div class="fav">
+                                            <div class="icon-fav">
+                                                <img src="ressources/icons/react/star-full.svg" />
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <p>Librairie jQuery</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-bootstrap.svg"
+                                            alt="Bootstrap">
+                                    </div>
+                                    <p>Librairie Bootstrap</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-github.svg"
+                                            alt="GitHub">
+                                            <!-- <div class="fav">
+                                                <div class="icon-fav">
+                                                    <img src="ressources/icons/react/star-full.svg" />
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                    <p>Versionning Git</p>
+                                </div>
+                                <div class="skill d-flex align-items-center flex-grow-1">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-wordpress.svg"
+                                            alt="Wordpress">
+                                    </div>
+                                    <p>CMS Wordpress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm col slide-content col-right">
+                        <div class="row d-none d-lg-flex flex-column p-0 m-0">
+                            <h2 class="title-part">Logiciels</h2>
+                            <span class="title-separation"></span>
+                        </div>
+                        <div class="row other-skills my-lg-4">
+                            <div class="col">
+                                <div class="skill d-flex align-items-center">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-office.svg"
+                                            alt="Suite Office">
+                                    </div>
+                                    <p>Suite Office</p>
+                                </div>
+                                <div class="skill d-flex align-items-center">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-illustrator.svg"
+                                            alt="Adobe Illustrator">
+                                    </div>
+                                    <p>Adobe Illustrator</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="skill d-flex align-items-center">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-photoshop.svg"
+                                            alt="Adobe Photoshop">
+                                    </div>
+                                    <p>Adobe Photoshop</p>
+                                </div>
+                                <div class="skill d-flex align-items-center">
+                                    <div class="skill-container">
+                                        <img class="skill-icon" src="./ressources/icons/skill/skill-indesign.svg"
+                                            alt="Adobe InDesign">
+                                    </div>
+                                    <p>Adobe InDesign</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column p-0 m-0">
+                            <h2 class="title-part">Langues</h2>
+                            <span class="title-separation"></span>
+                        </div>
+                        <div class="row lang-skills mt-3">
+                            <div class="skill lang-skill col-5 mx-auto my-2"
+                                style="background-image: url('ressources/img/flags/en-flag.png');">
+                                <h4>ANGLAIS - Niveau C1</h4>
+                                <p>TOEIC 965/990</p>
+                            </div>
+                            <div class="skill lang-skill col-5 mx-auto my-2"
+                                style="background-image: url('ressources/img/flags/ger-flag.png');">
+                                <h4>ALLEMAND - Niveau A2</h4>
+                                <p>Apprentissage scolaire</p>
+                            </div>
+                            <div class="skill lang-skill col-5 mx-auto my-2"
+                                style="background-image: url('ressources/img/flags/it-flag.png');">
+                                <h4>ITALIEN - Niveau A2</h4>
+                                <p>Apprentissage informel</p>
+                            </div>
+                            <div class="skill lang-skill col-5 mx-auto my-2"
+                                style="background-image: url('ressources/img/flags/ch-flag.png');">
+                                <h4>MANDARIN - Débutante</h4>
+                                <p>Apprentissage via <a href="https://www.duolingo.com/profile/Aimee_CHN">Duolingo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Réalisations -->
+            <div class="carousel-item part bg-light" id="work" data-slideid="4">
+                <div class="row h-100 slide-container">
+                    <div class="d-none col-12 col-lg-1 m-0 p-0 slide-col-title text-left justify-content-end">
+                        <h2 class="m-0 p-0">Réalisations</h2>
+                    </div>
+                    <div class="col-12 h-100 col-sm slide-content col-left d-flex flex-column p-0">
+                        <a target="_blank" href="https://github.com/Aimee-RTLNG/deamos" class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-deamos.png);">
+                            <h5 class="project-title">Jeu DEAMOS en Python</h5>
+                            <p class="project-description">Réalisé en Terminale ISN</p>
+                        </a>
+                        <a target="_blank" href="ressources/projects/SNAKE" class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-snake.png);">
+                            <h5 class="project-title">Snake JS</h5>
+                            <p class="project-description">Réalisé lors de mon DUT MMI</p>
+                        </a>
+                        <a target="_blank" href="https://dsp.usocome.fr/partenaire/hallier/" class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-dsp.png);">
+                            <h5 class="project-title">Page DSP SEW USOCOME</h5>
+                            <p class="project-description">Pages de mise en avant des Drive Service Partner <br> SEW USOCOME avec WordPress. <br> Exemple pour le partenaire Hallier.</p>
+                        </a>
+                    </div>
+                    <div class="col-12 h-100 col-sm slide-content col-right d-flex flex-column p-0 mb-5 mb-lg-0">
+                        <a target="_blank" href="http://easytoc.ritleng.mmi-unistra.fr/" class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-easytoc.png);">
+                            <h5 class="project-title">Projet Easy to C</h5>
+                            <p class="project-description">Générateur de menus de navigations,<br> formulaires et tableaux accessibles à tous.</p>
+                        </a>
+                        <div class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-mee.png);">
+                            <h5 class="project-title">Projet Mee</h5>
+                            <p class="project-description">En cours de réalisation</p>
+                        </div>
+                        <a target="_blank" href="https://www.usocome.com/services/drive_service_partner/trouvez_votre_drive_service_partner.html" class="project flex-grow-1" style="background-image: url(ressources/img/projects/banner-dsp-map.png);">
+                            <h5 class="project-title">Carte DSP SEW USOCOME</h5>
+                            <p class="project-description">Réalisé en alternance : mis</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="carousel-item part bg-light" id="contact" data-slideid="5">
+                <div class="row h-100 slide-container">
+                    <div class="d-none col-12 col-lg-1 m-0 p-0 slide-col-title text-left justify-content-end">
+                        <h2 class="m-0 p-0">Contact</h2>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center" style="background: white;">
+                        <div class="contact-card-main">
+                            <form id="contactForm" action="" onsubmit="return false;" method="POST">
+                                <div class="m-auto form-content row p-0">
+                                    <div class="col-12 col-lg">
+                                        <label for="contact_message">Message</label>
+                                        <textarea type="text" class="form-control" id="contact_message"
+                                            placeholder="Écrire quelque chose..."></textarea>
+                                        <small class="d-none form-text text-muted characters-left"><span
+                                                class="characters-left-count">300</span> caractères restants</small>
+                                        <small class="form-text text-muted" id="switchFont">Je n'écris pas comme ça
+                                            !</small>
+                                    </div>
+                                    <div class="col-12 col-lg pl-4 d-flex flex-column justify-content-end">
+                                        <label for="contact_name" class="mb-0">Nom</label>
+                                        <input type="text" class="form-control ml-4 mt-0 p-0" id="contact_name"
+                                            placeholder="Monsieur Madame" />
+                                        <label for="contact_phone" class="mb-0">Téléphone</label>
+                                        <input type="text" class="form-control ml-4 mt-0 p-0" id="contact_phone"
+                                            placeholder="0102030405" />
+                                        <label for="contact_mail" class="mb-0">Mail de contact</label>
+                                        <input type="email" class="form-control ml-4 mt-0 p-0" id="contact_mail"
+                                            placeholder="adresse@mail.fr" />
+                                        <div class="send-button">
+                                            <button type="submit" class="btn" id="contactFormSend">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="2em" width="2em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <!-- TODO remplacer par un sceau ? -->
+                        <div class="g-recaptcha" data-sitekey="6LfuxMsUAAAAAKO9ZlsFUjJdrH-eGpnKqsBEw69y"
+                            style="display: none;"></div>
+
+                        <svg class="contact-enveloppe" width="500" height="370" id="back-enveloppe"
+                            style="display: none;">
+                            <rect width="550" height="370" style="fill:white;"></rect>
+                        </svg>
+
+                        <svg class="contact-enveloppe" width="500" height="370" id="front-enveloppe"
+                            style="display: none;">
+                            <polygon points="0,370 500,370 0,0" style="fill:white;"></polygon>
+                            <polygon points="0,370 500,370 500,0" style="fill:white;"></polygon>
+                            <polygon points="0,370 500,370 250,150" style="fill:white;"></polygon>
+                        </svg>
+
+                        <svg class="contact-enveloppe" width="500" height="370" id="close-bottom-enveloppe"
+                            style="display: none;">
+                            <polygon points="0,370 500,370 250,150" style="fill:white;"></polygon>
+                        </svg>
+
+                        <svg class="contact-enveloppe" width="500" height="370" id="close-top-enveloppe"
+                            style="display: none;">
+                            <polygon points="0,0 500,0 250,200" style="fill:white;"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal IE -->
+    <div class="row modal" tabindex="-1" role="dialog" id="modal-ie">
+        <div class="col-8 modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Qui vous force à utiliser ça ?</h5>
+                    <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Mettre un gif marrant -->
+                <!-- ou image statique qui fait peur -->
+                <div class="modal-body">
+                    <p>Attention, la navigation sur mon CV interactif via Internet Explorer n'est pas recommandée suite
+                        à certaines incompatibilités. <br> Le site est fonctionnel mais l'expérience sera moins
+                        agréable.</p>
+                    <p>Si vous êtes retenus en otage et que le malfaiteur vous force à utiliser ce navigateur, une autre
+                        question se pose : Qu'est ce que vous foutez ici ?</p>
+                </div>
+                <div class="modal-footer flex-wrap">
+                    <a class="m-2 btn btn-primary" href="https://www.mozilla.org/firefox/new/">J'arrête la souffrance
+                        inutile dès à présent</a>
+                    <button type="button" class="m-2 btn btn-secondary modal-close" data-dismiss="modal">J'aime souffrir
+                        (au secours)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Easter egg Gif -->
+    <div class="easter-egg" id="secret-gif" data-toggle="tooltip" title="Changer le fond du logo">
+        <button class="gif-toggler rounded-circle">
+            <img src="ressources/icons/smile_wh.gif">
+        </button>
+    </div>
+
+    <!-- Easter egg Giraffe -->
+    <div class="giraffe-main peach-cursor" style="display: none;">
+        <canvas class="giraffe-canvas" width="300" height="300"></canvas>
+        <div class="help-her">
+            <svg viewBox="0 0 300 300" width="400" height="400">
+                <defs>
+                    <path id="circlePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 ">
+                    </path>
+                </defs>
+                <g class="circleText ">
+                    <use xlink:href="#circlePath" fill="none"></use>
+                    <text fill="#000" fill-opacity="1" font-family="Verdana" font-size="15">
+                        <textPath xlink:href="#circlePath"></textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

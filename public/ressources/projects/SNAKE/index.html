@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP n°3 : Serpents</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+
+    <body>
+	
+		<div class="whole_playlist">
+			<a>Playing now : <span id="playing"></span></a>
+			<div>
+				<audio id="music" class="music-js" height="0px" controls loop src="music/DKC-0123.mp3">
+				</audio>
+				<div id="next"><i class="fas fa-step-forward"></i></div>
+			</div>
+		</div>
+
+		<img src="snake.PNG" alt="logo" class="logo" />
+		<div class="score"></span><span id="game_mode">Survival</span> - Score : <span id="score_num">0</span><span id="timer" class="hidden"> - Timer : <span id="timer_show"></span>s</span></div>
+		<canvas id="myCanvas" width="400" height="400"></canvas>
+
+		<div id="dead" class="hidden">
+			<h2 id="gameovertext">GAME OVER</h2>
+			<button id="button_restart" onclick="restart()">REJOUER</button>
+		</div>
+
+		<div class="tutorial" id="div_tuto">
+			<div  class="window-close" id="close_tuto"><i class="far fa-window-close"></i></div>
+			<img src="arrow-keys.png" class="tuto-arrow">
+			<p>Utilisez les touches directionnelles du clavier pour jouer</p>
+		</div>
+
+		<div class="add_score hidden" id="highscore_add">
+			<div  class="window-close" id="close_add"><i class="far fa-window-close"></i></div>
+			<form method="post" id="highscore_add_form" enctype="multipart/form-data">
+				<h2>Ajouter son score</h2><br>
+				<div>
+					<span>Votre score : </span><span id="score_show"></span>
+					<span><input type="text" name="score_real" id="score_real" class="score hidden"></span><br>
+					<span><input type="text" name="pseudo" id="pseudo" class="pseudo" placeholder="Votre pseudo" required></span>
+					<input type="submit" value="Ajouter">
+				</div>
+			</form>
+		</div>
+
+		<div class="mode_change">
+			<button id="adventure">Mode Aventure</button>
+			<button id="survival">Mode Survivant</button>
+		</div>
+
+		<div class="tableau_scores table_score">
+			<h2>Tableau des scores</h2>
+			<table id="score_table">
+			<tr><th>Pseudo</th><th>Score</th><th>Date</th></tr>
+			</table>
+		</div>
+	
+    </body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</html>

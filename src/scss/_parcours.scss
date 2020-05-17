@@ -1,0 +1,37 @@
+#studies{
+    h3{
+        font-weight: bold;
+        font-size: 25px;
+    }    
+
+    .row-diploma{
+        
+        margin-top: 40px;
+
+        @media screen and (min-width: $break-large) {
+            margin: 0px;
+        }
+
+    }
+
+    .specific-info{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+        .icon-diploma{
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+
+    }
+
+    .description-diploma{
+        margin-left: 15px;
+    }
+
+}

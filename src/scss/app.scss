@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Palanquin:400,700&display=swap');
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'final';
+@import 'cursor';
+@import 'carousel';
+
+// Slides
+
+@import 'presentation';
+@import 'parcours';
+@import 'projects';
+@import 'competences';
+@import 'contact';
+
+@import 'secret';

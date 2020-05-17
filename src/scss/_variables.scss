@@ -1,0 +1,20 @@
+
+$font-family: 'Palanquin', sans-serif;
+
+// palette construction
+$palette: (
+  'primary': rgb(25,25,25), 
+  'secondary': rgb(248, 247, 247),
+  'blue': #6495ED,
+  'pink': #dbacdd
+);
+
+$break-small: 540px;
+$break-small-plus-one: 540px;
+$break-large: 1000px;
+$break-large-plus-one: 1001px;
+
+$color-presentation : #0084ff;
+$color-parcours : #ff00d4;
+$color-competences : #01fc87;
+$color-contact : #ff7300;

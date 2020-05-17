@@ -1,0 +1,274 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	margin: auto;
+	width: 800px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	image-rendering: pixelated;
+	overflow: hidden;
+}
+
+canvas {
+	border: 10px solid rgba(0,0,0,1);
+}
+
+.logo{
+	margin-bottom: 50px;
+}
+
+.score {
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.tutorial {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	border: 5px solid black;
+	background-color: white;
+	padding: 25px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	text-align: center;
+}
+
+.tutorial img {
+	width: 100px;
+	margin: auto;
+}
+
+.tutorial p {
+	margin-bottom: 0;
+}
+
+.fa-window-close {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.window-close {
+	position: relative;
+	left: 55%;
+	top: -15px;
+}
+
+.hidden {
+	display: none;
+}
+
+.awesome {
+      color:#313131;
+      font-weight: bold;
+      -webkit-animation:colorchange 10s infinite alternate;
+}
+
+.back-awesome {
+    -webkit-animation:colorchange2 10s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+      0% { color: pink; }
+      10% { color: #00b9f1; }
+      20% { color: #f9c00c; }
+	  30% { color: #f9320c; }
+	  40% { color: pink; }
+	  50% { color: #00b9f1; }
+      60% { color: #f9c00c; }
+	  70% { color: #f9320c;}
+      80% { color: pink; }
+	  90% { color: #00b9f1; }
+	  100% { color: #f9c00c; }
+}
+
+@-webkit-keyframes colorchange2 {
+      0% { background-color: pink; }
+      10% { background-color: #00b9f1; }
+      20% { background-color: #f9c00c; }
+	  30% { background-color: #f9320c; }
+	  40% { background-color: pink; }
+	  50% { background-color: #00b9f1; }
+      60% { background-color: #f9c00c; }
+	  70% { background-color: #f9320c;}
+      80% { background-color: pink; }
+	  90% { background-color: #00b9f1; }
+	  100% { background-color: #f9c00c; }
+}
+
+#music {
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: white;
+}
+
+.main__playlist{
+	position: fixed;
+	top: 40px;
+}
+
+.whole_playlist {
+	display: flex;
+	position: fixed; 
+	top: 25px;
+	left: 10px;
+	flex-direction: column;
+	border: 5px solid black;
+	background-color: white;
+	padding: 20px 15px 10px 0px;
+}
+
+.whole_playlist div{
+	display: flex;
+	align-items: center;
+	text-align: right;
+}
+
+.whole_playlist a{
+	display: flex;
+	align-items: center;
+	text-align: right;
+	margin-left: 20px;
+}
+
+.playlist {
+	margin-bottom: 5px; 
+	width: 10px;
+	height: 10px;
+}
+
+#dead {
+	position: absolute;
+	top: 60%;
+	width: 200px;
+	height: 170px !important;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#button_restart {
+	border: solid 5px black;
+	background-color: rgba(255,255,255,0);
+	padding: 15px;
+	position: relative; 
+	top: 20px;
+	transition: all 0.5s;
+}
+	
+#button_restart:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.add_score{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border: 5px solid black;
+	background-color: white;
+	padding: 25px 25px;
+	width: 15%;
+	height: 250px;
+	text-align: center;
+}
+
+.table_score{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	border: 5px solid black;
+	background-color: white;
+	padding: 25px 25px;
+	width: 20%;
+	text-align: center;
+	max-height: 600px;
+	min-width: 250px;
+}
+
+#score_table {
+	margin: auto;
+	border-collapse: collapse;
+	text-align:  center;
+}
+
+#score_table td, #score_table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	width: 33%;
+}
+
+#score_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#score_table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: black;
+}
+
+input[type="submit"], input[type="text"] {
+	padding: 10px;
+	border: 5px solid black;
+	width: 120px;
+	text-align: center;
+	background-color: white;
+	margin: 10px 0;
+}
+
+
+input[type="text"] {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+input[type="text"]::placeholder {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+#highscore_add_form {
+	height: 90%;
+}
+
+#highscore_add_form h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.mode_change {
+	position: absolute;
+	bottom: 0;
+	left: 35%;
+	width: 30%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.mode_change button {
+	background-color: white;
+	padding: 7px 10px;
+	border: none;
+	transition: all 0.5s;
+	border: 5px solid black;
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+}
+
+.mode_change button:hover {
+	background-color: darkgreen;
+	color: white;
+}

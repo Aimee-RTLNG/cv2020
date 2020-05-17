@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Niconne|Over+the+Rainbow|Pangolin|Patrick+Hand+SC&display=swap');
+
+.contact-card-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    overflow: hidden;
+    @media screen and (min-width: $break-large) {
+        width: 80vw;
+        height: 100%;
+    }
+    position: relative;
+    margin: auto;
+    padding-bottom: 120px;
+
+    #contactForm{
+        @media screen and (min-width: $break-large) {
+            height: 600px;
+            width: 840px;
+            background-image: url('../ressources/img/postalcard.svg');
+        }
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-content{
+            @media screen and (min-width: $break-large) {
+                width: 750px;
+                height: 500px;
+            }
+            margin: auto;
+
+            textarea{
+                @media screen and (min-width: $break-large) {
+                    height: 420px;
+                }
+                height: 200px;
+            }
+
+            textarea, input{
+                font-family: "Pangolin", cursive;
+                background: none;
+                border: none;
+                font-size: 20px;
+                resize: none;
+                &:hover, &:focus, &:active{
+                    outline: none !important;
+                    border: none !important;
+                    border-color: #cccccc;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+
+            button[type=submit]{
+                background: none;
+                width: 2em;
+                height: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                transition: all .2s;
+                padding: 25px;
+                border-radius: 100px;
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, .15);
+                }
+            }
+
+            #switchFont{
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .send-button{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    svg{
+        position: absolute;
+        -webkit-filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .1));
+        filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .1));
+    }
+
+    #back-enveloppe{
+        bottom: -400px;
+        transition: bottom 1.5s ease-in-out;
+
+        &.close-enveloppe{
+            bottom: 15px;
+        }
+    }
+
+    #front-enveloppe, #close-bottom-enveloppe{
+        z-index: 100;
+        bottom: -400px;
+        transition: bottom 1.5s ease-in-out;
+
+        &.close-enveloppe{
+            bottom: 15px;
+        }
+    }
+
+    #close-top-enveloppe{
+        z-index: 120;
+        top: -250px;
+        transition: top 1.5s ease-in-out;
+
+        &.close-enveloppe{
+            top: 15px;
+        }
+    }
+
+    .contact-card{
+        
+    }
+
+    .g-recaptcha{
+        position: absolute;
+        margin: auto;
+        z-index: 200;
+    }
+
+}

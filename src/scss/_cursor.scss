@@ -1,0 +1,73 @@
+
+.cursor {
+    z-index: 9999;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    background:
+    radial-gradient(farthest-side ,#fff 95%,transparent 100%)
+      calc(var(--x) - .75em) calc(var(--y) - .75em)/1.5em 1.5em  fixed no-repeat;
+    background-color: white;
+    mix-blend-mode:difference;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.cursor-IE {
+    background-color: black;
+}
+
+.cursor-hover {
+    width: 30px;
+    height: 30px;
+}
+
+.cursor-click{
+    background: red;
+}
+
+@keyframes click-all {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes hover-link {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes click-link {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.expand {
+    animation: click-all .5s forwards;
+}
+
+.hover-link {
+    animation: hover-link .5s forwards;
+    transition: all 0.1s;
+}
+
+.click-link {
+    animation: click-link .3s forwards;
+}

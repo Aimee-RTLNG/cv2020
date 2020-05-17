@@ -1,0 +1,217 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	background-image: url("../uploads/fond.png") ;
+	background-color: white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	bottom: 0;
+}
+
+/***************** BANNIERRE **************************************************************************************************************/
+
+@font-face {
+    font-family: 'Moon';
+    src: url('../uploads/polices/moon.woff2') format('woff2'),
+         url('../uploads/polices/moon.woff') format('woff'),
+		 url('../uploads/polices/moon.otf') format('otf'),
+		 url('../uploads/polices/moon.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	font-family: 'Moon', "Arial";
+	padding-top: 15px;
+}
+
+.logo {
+  width: 200px;
+  display: block;
+}
+
+.title {
+	text-align: center;
+	font-size:50px;
+	margin: 20px;
+}
+
+h1 {
+	color: black;
+	font-size: 30pt;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	outline: black solid 3px;
+	outline-width: thick;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px;
+}
+
+li {
+	text-align: center;
+	list-style-type:none;
+	text-decoration:none;
+	float: left;
+}
+
+li a, li.accueil {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+li a:hover {
+    background-color: white;
+	color:black;
+}
+
+div.introduction {
+	display: column;
+	background-color:black;
+	width: 60%;
+	padding: 30px;
+	height: 300px;
+	overflow: auto;
+}
+
+p.introduction {
+	font-size: 18px;
+	line-height: 25px;
+	color: white;
+	padding: 8px;
+	text-align: justify;
+	margin:0;
+
+}
+
+.body {
+	display: flex;
+	justify-content: space-around;
+}
+
+.account {
+	background-color:black;
+	color: white;
+	padding: 30px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	float: right;
+}
+
+.modifaccount {
+	border: 5px solid black;
+	color: white;
+	padding: 30px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	float: right;
+}
+
+footer {
+	background-color:black;
+	width: 100%;
+	height: 40px;
+	text-align:center;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.contenu {
+	margin: 30px 60px;
+	clear: both;
+}
+
+.innerstyle {
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.cadre {
+	background-color: white;
+	padding: 20px 50px;
+	width: 100%;
+}
+
+.annonce {
+	@include background-image(linear-gradient(left, #5C258D, #4389A2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: black;
+	-o-text-fill-color: black;
+	-webkit-text-stroke: 0.08rem black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.8em;
+	line-height: 1.1em;
+	margin: 0;
+	letter-spacing: -1px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	padding:10px;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    display: inline-block;
+	cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+
+/* BARRE DE DEFILEMENT */
+
+::-webkit-scrollbar:hover {
+    opacity:1;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    opacity:0;
+}
+::-webkit-scrollbar-track {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: #1c98f0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1c98f0;
+}

@@ -1,0 +1,36 @@
+#presentation {
+
+    .slide-content{
+        padding: 0;
+    }
+    
+    .logo-container{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            z-index:50;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .logo-background{
+            width: 80%;
+            position: absolute;
+        }
+
+    }
+
+    .summary{
+
+        p{
+            svg{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}

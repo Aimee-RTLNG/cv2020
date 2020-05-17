@@ -1,0 +1,65 @@
+header{
+
+    .navbar-brand, .navbar-brand-action{
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        
+        img {
+            width: 14px;
+            transition: all .2s;
+
+            &.rotation{
+                -webkit-animation: rotationLogo 1.2s;
+                -moz-animation: rotationLogo 1.2s;
+                -o-animation: rotationLogo 1.2s;
+                animation: rotationLogo 1.2s;
+                animation-timing-function: ease-in-out;
+            }
+
+        }
+    }
+
+    .nav-item{
+        margin: 0 25px;
+        transition: all .5s;
+
+        .underline-selected{
+            margin: auto;
+            width: 0px;
+            height: 3px;
+            background-color: black;
+            transition: all .6s;
+        }
+
+        &:hover {
+            letter-spacing: 2px;
+        }
+
+        &.active{
+            font-weight: 500;
+            color: black;
+
+            .underline-selected{
+                width: 50px;
+                height: 3px;
+                background-color: black;
+            }
+        }
+    }
+
+    .social-navbar{
+        font-size: 25px;
+    }
+
+}
+
+@keyframes rotationLogo{
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
