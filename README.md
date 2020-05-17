@@ -15,8 +15,3 @@ Date provisoire de fin de la refonte : 01/02/2020.
 - Jquery
 - Fontawesome
 - Icônes animés de lordicon.com
-- Photos de unsplash.com
-
-# Planning
-Première étape : page d'attente pour la construction du site, avec moyens de contact divers et lien vers le CV papier. 
-
